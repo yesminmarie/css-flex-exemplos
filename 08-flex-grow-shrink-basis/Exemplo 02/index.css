@@ -1,0 +1,67 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+.home {
+    /* flex-grow aumenta o tamanho do item para que ele preencha todo o espaço. */
+    flex-grow: 0;
+
+    /*flex-shrink: 1 (default)
+      quanto maior o valor, menor o item fica em relação aos outros itens 
+      conforme o tamanho da janela é diminuído
+    */
+    flex-shrink: 5;
+
+    /* flex-basis só irá funcionar se flex-grow for 0 ou se essa propriedade não for definida. 
+    O item terá no máximo 200px, mas se a janela for menor, o item terá largura menor que 200px */
+    flex-basis: 200px; 
+
+    /* é o mesmo que
+    flex: 0 5 200px;
+    */
+}
+.logout {
+    flex: 0 1 200px;
+
+    /* é o mesmo que:
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    */
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+  }
+
+body {
+    margin: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #ffeead;
+    margin: 10px;
+}
+
+.container > div:nth-child(1) {
+    background-color: #96ceb4;
+}
+
+.container > div:nth-child(2) {
+    background-color: #ff6f69;
+}
+
+.container > div:nth-child(3) {
+    background-color: #88d8b0;
+}
+
+.container > div:nth-child(4) {
+    background-color: #ff6f69;
+  }

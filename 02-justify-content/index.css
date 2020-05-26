@@ -1,0 +1,39 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    
+    /*  justify-content
+        justify-content: flex-start -> posiciona todos os itens à esquerda
+        justify-content: flex-end -> posiciona todos os itens à direita
+        justify-content: center -> posiciona todos os itens ao centro
+        justify-content: space-around -> adiciona um espaço de meio tamanho ao redor de cada item
+        justify-content: space-between -> adiciona espaços entre os itens, menos no início e no fim
+        justify-content: space-evenly -> adiciona espaços iguais ao redor de cada item
+    */
+    
+    justify-content: space-evenly;
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+}
+
+.container > div:nth-child(1) {
+    background-color: #96ceb4;
+}
+
+.container > div:nth-child(2) {
+    background-color: #ff6f69;
+}
+
+.container > div:nth-child(3) {
+    background-color: #88d8b0;
+}
