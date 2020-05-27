@@ -13,7 +13,7 @@
     */
     flex-shrink: 5;
 
-    /* flex-basis só irá funcionar se flex-grow for 0 ou se essa propriedade não for definida. 
+    /* flex-basis 
     O item terá no máximo 200px, mas se a janela for menor, o item terá largura menor que 200px */
     flex-basis: 200px; 
 
